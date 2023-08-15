@@ -1,4 +1,4 @@
-/* --------------------------- NO TOCAR DESDE ACÁ --------------------------- */
+
 let datosPersona = {
   nombre: "",
   edad: 0,
@@ -31,10 +31,10 @@ const cambiarTema = document.querySelector('#cambiar-tema');
 profileBtn.addEventListener("click", renderizarDatosUsuario);
 materiasBtn.addEventListener("click", recorrerListadoYRenderizarTarjetas);
 cambiarTema.addEventListener("click", alternarColorTema);
-/* --------------------------- NO TOCAR HASTA ACÁ --------------------------- */
+
 
 function obtenerDatosDelUsuario() {
-  /* --------------- PUNTO 1: Escribe tu codigo a partir de aqui --------------- */
+  
 
   datosPersona.nombre = prompt('Ingrese su nombre:');
   datosPersona.anioNacimiento = parseInt(prompt('Ingrese su año de nacimiento:'));
@@ -47,9 +47,9 @@ function obtenerDatosDelUsuario() {
 }
 
 function renderizarDatosUsuario() {
-  /* ------------------- NO TOCAR NI ELIMINAR ESTA FUNCION. ------------------- */
+  
   obtenerDatosDelUsuario();
-  /* --------------- PUNTO 2: Escribe tu codigo a partir de aqui --------------- */
+  
   const nombreSpan = document.querySelector('#nombre');
   const edadSpan = document.querySelector('#edad');
   const ciudadSpan = document.querySelector('#ciudad');
@@ -65,7 +65,7 @@ function renderizarDatosUsuario() {
 
 
 function recorrerListadoYRenderizarTarjetas() {
-  /* ------------------ PUNTO 3: Escribe tu codigo desde aqui ------------------ */
+ 
   document.getElementById('fila').innerHTML = '';
   const materias = [
     { lenguajes: 'HTML, CSS', bimestre: 1, imgSrc: 'https://ostraining.com/wp-content/uploads/coding/html5-css3-hd.jpg', alt: 'Materia 1' },
@@ -106,7 +106,7 @@ function recorrerListadoYRenderizarTarjetas() {
 
 
 function alternarColorTema() {
-  /* --------------------- PUNTO 4: Escribe tu codigo aqui --------------------- */
+ 
 
   const sitioElemento = document.querySelector('#sitio');
   sitioElemento.classList.toggle('dark');
@@ -116,7 +116,7 @@ function alternarColorTema() {
   cambiarTemaBtn.addEventListener('click', cambiarTema);
 }
 
-/* --------------------- PUNTO 5: Escribe tu codigo aqui --------------------- */
+
 
 document.addEventListener('keydown', (event) => {
   if (event.key === 'F' || event.key === 'f') {
